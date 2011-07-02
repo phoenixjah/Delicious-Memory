@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface FirstViewController : UIViewController {
+@interface FirstViewController : UIViewController <UINavigationBarDelegate, UITableViewDelegate,
+                                                   UITableViewDataSource, UIActionSheetDelegate>
+{
+	UITableView	*myTableView;
+	NSMutableArray *menuList;
 
 }
+@property (nonatomic, retain) IBOutlet UITableView *myTableView;
+@property (nonatomic, retain) NSMutableArray *menuList;
 
 @end

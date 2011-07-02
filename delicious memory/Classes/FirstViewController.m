@@ -10,18 +10,10 @@
 
 
 @implementation FirstViewController
+@synthesize menuList, myTableView ;
 
+static NSArray *pageNames = nil;
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-	if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -29,12 +21,36 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLoad
+{
+	//self.navigationItem.prompt = NSLocalizedString(@"My Menu", @"FirstViewController");
+
+	// segmented control as the custom title view
+	NSArray *segmentTextContent = [NSArray arrayWithObjects:NSLocalizedString(@"吃過的", @""), NSLocalizedString(@"想去吃的", @""),nil];
+	UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:segmentTextContent];
+	segmentedControl.selectedSegmentIndex = 0;
+	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+	segmentedControl.frame = CGRectMake(0, 0, 180, 30);
+	[segmentedControl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+	
+	//defaultTintColor = [segmentedControl.tintColor retain];	// keep track of this for later
+    
+	self.navigationItem.titleView = segmentedControl;
+	[segmentedControl release];
+
 }
-*/
+
+
+- (IBAction)segmentAction:(id)sender
+{
+	// The segmented control was clicked, handle it here 
+	UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
+	NSLog(@"Segment clicked: %d", segmentedControl.selectedSegmentIndex);
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -51,13 +67,22 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+- (void)viewDidUnload
+{
+	self.myTableView = nil;
+	self.menuList = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[self.myTableView deselectRowAtIndexPath:self.myTableView.indexPathForSelectedRow animated:NO];
 }
 
 
 - (void)dealloc {
+	[myTableView release];
+	[menuList release];
+
     [super dealloc];
 }
 
