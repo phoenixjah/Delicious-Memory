@@ -17,8 +17,9 @@
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
 		B307C01213CC2F9F0024E684 /* addDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B307C01113CC2F9F0024E684 /* addDataViewController.m */; };
-		B307C01513CC30530024E684 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B307C01413CC30530024E684 /* OverlayViewController.m */; };
 		B307C03013CC3FAD0024E684 /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B307C02F13CC3FAD0024E684 /* OverlayViewController.xib */; };
+		B3CF9F5E13CD7F3400DA8B62 /* capture-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CF9F5D13CD7F3400DA8B62 /* capture-button.png */; };
+		B3CF9F6213CD831A00DA8B62 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CF9F6113CD831A00DA8B62 /* MyTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +39,10 @@
 		8D1107310486CEB800E47090 /* delicious_memory-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "delicious_memory-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B307C01013CC2F9F0024E684 /* addDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addDataViewController.h; sourceTree = "<group>"; };
 		B307C01113CC2F9F0024E684 /* addDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addDataViewController.m; sourceTree = "<group>"; };
-		B307C01313CC30530024E684 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
-		B307C01413CC30530024E684 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		B307C02F13CC3FAD0024E684 /* OverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayViewController.xib; sourceTree = "<group>"; };
+		B3CF9F5D13CD7F3400DA8B62 /* capture-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "capture-button.png"; path = "../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png"; sourceTree = SOURCE_ROOT; };
+		B3CF9F6013CD831A00DA8B62 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		B3CF9F6113CD831A00DA8B62 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 				1D3623250D0F684500981E51 /* delicious_memoryAppDelegate.m */,
 				B307C01013CC2F9F0024E684 /* addDataViewController.h */,
 				B307C01113CC2F9F0024E684 /* addDataViewController.m */,
-				B307C01313CC30530024E684 /* OverlayViewController.h */,
-				B307C01413CC30530024E684 /* OverlayViewController.m */,
+				B3CF9F6013CD831A00DA8B62 /* MyTabBarController.h */,
+				B3CF9F6113CD831A00DA8B62 /* MyTabBarController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B3CF9F5213CD7ED200DA8B62 /* images */,
 				B307C02F13CC3FAD0024E684 /* OverlayViewController.xib */,
 				2840D7CD1179279E00D7F93C /* FirstView.xib */,
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
@@ -121,6 +124,14 @@
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3CF9F5213CD7ED200DA8B62 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF9F5D13CD7F3400DA8B62 /* capture-button.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
 				2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */,
 				B307C03013CC3FAD0024E684 /* OverlayViewController.xib in Resources */,
+				B3CF9F5E13CD7F3400DA8B62 /* capture-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +202,7 @@
 				1D3623260D0F684500981E51 /* delicious_memoryAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
 				B307C01213CC2F9F0024E684 /* addDataViewController.m in Sources */,
-				B307C01513CC30530024E684 /* OverlayViewController.m in Sources */,
+				B3CF9F6213CD831A00DA8B62 /* MyTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

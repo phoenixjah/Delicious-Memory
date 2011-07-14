@@ -413,6 +413,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
+					<string>106.CustomClassName</string>
 					<string>106.IBEditorWindowLastContentRect</string>
 					<string>106.IBPluginDependency</string>
 					<string>107.IBPluginDependency</string>
@@ -440,6 +441,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
+					<string>MyTabBarController</string>
 					<string>{{352, 359}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -511,6 +513,14 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">MyTabBarController</string>
+					<string key="superclassName">UITabBarController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/MyTabBarController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">UIWindow</string>
 					<string key="superclassName">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -549,7 +559,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UITabBarController</string>
+							<string>MyTabBarController</string>
 							<string>UIWindow</string>
 						</object>
 					</object>
@@ -564,7 +574,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">tabBarController</string>
-								<string key="candidateClassName">UITabBarController</string>
+								<string key="candidateClassName">MyTabBarController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">window</string>

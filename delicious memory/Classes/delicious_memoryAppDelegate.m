@@ -7,7 +7,7 @@
 //
 
 #import "delicious_memoryAppDelegate.h"
-
+#import "MyTabBarController.h"
 
 @implementation delicious_memoryAppDelegate
 
@@ -24,6 +24,7 @@
 
 	// Set the tab bar controller as the window's root view controller and display.
     self.window.rootViewController = self.tabBarController;
+	[self.tabBarController addCenterButtonWithImage:[UIImage imageNamed:@"capture-button.png"] highlightImage:nil];
     [self.window makeKeyAndVisible];
 
     return YES;

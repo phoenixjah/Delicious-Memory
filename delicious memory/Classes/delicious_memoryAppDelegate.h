@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MyTabBarController;
 
 @interface delicious_memoryAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
-    UITabBarController *tabBarController;
+    MyTabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet MyTabBarController *tabBarController;
 
 @end

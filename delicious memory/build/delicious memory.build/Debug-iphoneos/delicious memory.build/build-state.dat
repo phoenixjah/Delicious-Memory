@@ -1,0 +1,647 @@
+Tdelicious memory
+v7
+r0
+t332320987.924034
+cCheck dependencies
+cCpResource "build/Debug-iphoneos/delicious memory.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/Info.plist" delicious_memory-Info.plist
+cCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib"
+cCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib"
+cCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib"
+cCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib"
+cCopyPNGFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/capture-button.png" "../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png"
+cProcessPCH /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch.gch delicious_memory_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch.gch delicious_memory_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/main.o" "/Users/Phx/Delicious-Memory/delicious memory/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious_memoryAppDelegate.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/FirstViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/addDataViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/MyTabBarController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/main.o" "/Users/Phx/Delicious-Memory/delicious memory/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious_memoryAppDelegate.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/FirstViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/addDataViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/MyTabBarController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory" normal armv7
+cLd "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory" normal armv6
+cCreateUniversalBinary "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory" normal "armv6 armv7"
+cGenerateDSYMFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app.dSYM" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory"
+cProcessProductPackaging "/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision"
+cTouch "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent"
+cCodeSign "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D7401890000000000000110
+t1299448201
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
+c000000004D5A259E0000000000010AD5
+t1297753502
+s68309
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/Users/Phx/Delicious-Memory/delicious memory/../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png
+c000000004DADBCB800000000000009C6
+t1303231672
+s2502
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.h
+c000000004E0ED746000000000000022F
+t1309595462
+s559
+i<UIKit/UIKit.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m
+c000000004E0EE58300000000000009AA
+t1309599107
+s2474
+i"FirstViewController.h"
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.h
+c000000004E1D4CA40000000000000195
+t1310543012
+s405
+i<UIKit/UIKit.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m
+c000000004E1D5689000000000000051F
+t1310545545
+s1311
+i"MyTabBarController.h"
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.h
+c000000004E1D5B88000000000000045B
+t1310546824
+s1115
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioServices.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m
+c000000004E1D60BD0000000000000C9A
+t1310548157
+s3226
+i"OverlayViewController.h"
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.h
+c000000004E1E995B00000000000002D5
+t1310628187
+s725
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioServices.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m
+c000000004E1E99480000000000000B77
+t1310628168
+s2935
+i"addDataViewController.h"
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.h
+c000000004E1D4D72000000000000020C
+t1310543218
+s524
+i<UIKit/UIKit.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m
+c000000004E1D4D410000000000000D04
+t1310543169
+s3332
+i"delicious_memoryAppDelegate.h"
+i"MyTabBarController.h"
+
+N/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib
+c000000004E0ED9930000000000004AE1
+t1309596051
+s19169
+
+N/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib
+c000000004E1D4D580000000000009D3D
+t1310543192
+s40253
+
+N/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib
+c000000004E1D5D01000000000000567E
+t1310547201
+s22142
+
+N/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib
+c000000004E0ECF0D00000000000049D8
+t1309593357
+s18904
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app
+t1310628187
+s476
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app.dSYM
+t1310628187
+s102
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/FirstView.nib
+t1310455681
+s2923
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/Info.plist
+t1310461199
+s876
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/MainWindow.nib
+t1310547120
+s5842
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/OverlayViewController.nib
+t1310547205
+s1687
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/PkgInfo
+t1310461199
+s8
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/ResourceRules.plist
+t1310455680
+s485
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/SecondView.nib
+t1310455681
+s2920
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/capture-button.png
+t1310547121
+s2514
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory
+t1310628187
+s68208
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision
+t1310455683
+s142080
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/FirstViewController.o
+t1310455682
+s53756
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/MyTabBarController.o
+t1310547122
+s44120
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/OverlayViewController.o
+t1310548157
+s53992
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/addDataViewController.o
+t1310628187
+s47692
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory
+t1310628187
+s31304
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory.LinkFileList
+c000000004E1E98F00000000000000301
+t1310628080
+s769
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious_memoryAppDelegate.o
+t1310547122
+s55592
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/main.o
+t1310455682
+s6460
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/FirstViewController.o
+t1310455682
+s53588
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/MyTabBarController.o
+t1310547124
+s43460
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/OverlayViewController.o
+t1310548157
+s53568
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/addDataViewController.o
+t1310628187
+s47612
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory
+t1310628187
+s31344
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory.LinkFileList
+c000000004E1E98F00000000000000301
+t1310628080
+s769
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious_memoryAppDelegate.o
+t1310547124
+s55480
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/main.o
+t1310455682
+s6444
+
+N/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent
+t1310461199
+s428
+
+N/Users/Phx/Delicious-Memory/delicious memory/delicious_memory_Prefix.pch
+c000000004E0ECF0D00000000000000C9
+t1309593357
+s201
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Phx/Delicious-Memory/delicious memory/main.m
+c000000004E0ECF0D000000000000016B
+t1309593357
+s363
+i<UIKit/UIKit.h>
+
+N/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision
+c000000004DDDECF30000000000022B00
+t1306389747
+s142080
+
+N/var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch.gch
+t1310455682
+s10184604
+
+N/var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch.gch
+t1310455682
+s10647452
+
+Ndelicious_memory-Info.plist
+c000000004E1C0D0F0000000000000388
+t1310461199
+s904
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies332320987#332320987#0(0"0(0#1#0"8620231168#0"0#
+
+CCodeSign "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"
+s332320987.738124
+e332320987.923994
+r1
+xCodeSign
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app
+lSLF07#2@52"CodeSign "build/Debug-iphoneos/delicious memory.app"332320987#332320987#0(0"0(0#0#86"/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app8601763712#721"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Lin Chia (FD7SZN7782)" "--resource-rules=/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/ResourceRules.plist" --entitlements "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/FirstViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332148482.639715
+e332148482.743950
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/FirstViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: incomplete implementation of class 'FirstViewController'
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:cellForRowAtIndexPath:' not found
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:numberOfRowsInSection:' not found
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:15: warning: 'pageNames' defined but not used
+lSLF07#2@82"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m332148482#332148482#0(756"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: incomplete implementation of class 'FirstViewController'/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:cellForRowAtIndexPath:' not found/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:numberOfRowsInSection:' not found/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:15: warning: 'pageNames' defined but not used5(22@56"Incomplete implementation of class 'FirstViewController'332148482#0#145#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#38"incomplete implementation of class '*'0(22@67"Method definition for '-tableView:cellForRowAtIndexPath:' not found332148482#145#156#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#35"method definition for '*' not found0(22@67"Method definition for '-tableView:numberOfRowsInSection:' not found332148482#301#156#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#35"method definition for '*' not found0(22@89"Class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol332148482#457#178#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#51"class '*' does not fully implement the '*' protocol0(22@32"'pageNames' defined but not used332148482#635#121#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#15#0#15#0#24"'*' defined but not used0(0#0#74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m8619838784#2030"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/FirstViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/MyTabBarController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332239922.688482
+e332239922.769748
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/MyTabBarController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m332239922#332239922#0(0"0(0#0#73"/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m8646550464#2028"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/MyTabBarController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/OverlayViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332240957.147280
+e332240957.421040
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/OverlayViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m332240957#332240957#0(0"0(0#0#76"/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m8645834336#2034"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/OverlayViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/addDataViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332320987.495230
+e332320987.643106
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/addDataViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController imagePickerController:didFinishPickingMediaWithInfo:]':
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:98: warning: unused variable 'image'
+lSLF07#2@84"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m332320987#332320987#0(285"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController imagePickerController:didFinishPickingMediaWithInfo:]':/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:98: warning: unused variable 'image'1(22@23"Unused variable 'image'332320987#171#114#0(6@76"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m332320968#98#0#98#0#19"unused variable '*'0(0#0#76"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m8618319392#2034"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/addDataViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious_memoryAppDelegate.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332239921.773267
+e332239922.686626
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious_memoryAppDelegate.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m332239921#332239922#0(0"0(0#0#82"/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m8644456256#2046"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious_memoryAppDelegate.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/main.o" "/Users/Phx/Delicious-Memory/delicious memory/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332148482.579782
+e332148482.639603
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/main.o
+x/Users/Phx/Delicious-Memory/delicious memory/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/Phx/Delicious-Memory/delicious memory/main.m332148482#332148482#0(0"0(0#0#51"/Users/Phx/Delicious-Memory/delicious memory/main.m8618477504#1992"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/main.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/main.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/FirstViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332148482.800464
+e332148482.877109
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/FirstViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: incomplete implementation of class 'FirstViewController'
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:cellForRowAtIndexPath:' not found
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:numberOfRowsInSection:' not found
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:15: warning: 'pageNames' defined but not used
+lSLF07#2@82"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m332148482#332148482#0(756"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: incomplete implementation of class 'FirstViewController'/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:cellForRowAtIndexPath:' not found/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: method definition for '-tableView:numberOfRowsInSection:' not found/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:89: warning: class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m:15: warning: 'pageNames' defined but not used5(22@56"Incomplete implementation of class 'FirstViewController'332148482#0#145#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#38"incomplete implementation of class '*'0(22@67"Method definition for '-tableView:cellForRowAtIndexPath:' not found332148482#145#156#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#35"method definition for '*' not found0(22@67"Method definition for '-tableView:numberOfRowsInSection:' not found332148482#301#156#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#35"method definition for '*' not found0(22@89"Class 'FirstViewController' does not fully implement the 'UITableViewDataSource' protocol332148482#457#178#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#89#0#89#0#51"class '*' does not fully implement the '*' protocol0(22@32"'pageNames' defined but not used332148482#635#121#0(6@74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m331291907#15#0#15#0#24"'*' defined but not used0(0#0#74"/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m8619591264#2030"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/FirstViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/FirstViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/MyTabBarController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332239924.319711
+e332239924.407900
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/MyTabBarController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m332239924#332239924#0(0"0(0#0#73"/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m8634072384#2028"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/MyTabBarController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/MyTabBarController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/OverlayViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332240957.290838
+e332240957.414079
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/OverlayViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m332240957#332240957#0(0"0(0#0#76"/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m8657285312#2034"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/OverlayViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/OverlayViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/addDataViewController.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332320987.496758
+e332320987.638082
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/addDataViewController.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController imagePickerController:didFinishPickingMediaWithInfo:]':
+o/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:98: warning: unused variable 'image'
+lSLF07#2@84"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m332320987#332320987#0(285"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController imagePickerController:didFinishPickingMediaWithInfo:]':/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:98: warning: unused variable 'image'1(22@23"Unused variable 'image'332320987#171#114#0(6@76"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m332320968#98#0#98#0#19"unused variable '*'0(0#0#76"/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m8612400224#2034"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/addDataViewController.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious_memoryAppDelegate.o" "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332239922.769975
+e332239924.097621
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious_memoryAppDelegate.o
+x/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m332239922#332239924#0(0"0(0#0#82"/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m8642881056#2046"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/Classes/delicious_memoryAppDelegate.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious_memoryAppDelegate.o"0#
+
+CCompileC "build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/main.o" "/Users/Phx/Delicious-Memory/delicious memory/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332148482.661677
+e332148482.721084
+r1
+xCompileC
+xbuild/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/main.o
+x/Users/Phx/Delicious-Memory/delicious memory/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/Phx/Delicious-Memory/delicious memory/main.m332148482#332148482#0(0"0(0#0#51"/Users/Phx/Delicious-Memory/delicious memory/main.m8619366400#1992"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -include /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch -c "/Users/Phx/Delicious-Memory/delicious memory/main.m" -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib"
+s332148481.044599
+e332148481.631846
+r1
+xCompileXIB
+x/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib
+lSLF07#2@24"CompileXIB FirstView.xib332148481#332148481#0(0"0(0#0#58"/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib8620393120#573"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/FirstView.nib" "/Users/Phx/Delicious-Memory/delicious memory/FirstView.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib"
+s332239920.205200
+e332239921.003583
+r1
+xCompileXIB
+x/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib332239920#332239921#0(0"0(0#0#59"/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib8657352320#575"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/MainWindow.nib" "/Users/Phx/Delicious-Memory/delicious memory/MainWindow.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib"
+s332240004.907297
+e332240005.410868
+r1
+xCompileXIB
+x/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib
+lSLF07#2@36"CompileXIB OverlayViewController.xib332240004#332240005#0(0"0(0#0#70"/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib8619754880#597"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/OverlayViewController.nib" "/Users/Phx/Delicious-Memory/delicious memory/OverlayViewController.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB "/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib"
+s332148480.563918
+e332148481.044496
+r1
+xCompileXIB
+x/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib
+lSLF07#2@25"CompileXIB SecondView.xib332148480#332148481#0(0"0(0#0#59"/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib8604234720#575"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/SecondView.nib" "/Users/Phx/Delicious-Memory/delicious memory/SecondView.xib" --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCopyPNGFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/capture-button.png" "../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png"
+s332239921.000023
+e332239921.772532
+r1
+xCopyPNGFile
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/capture-button.png
+x../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png
+lSLF07#2@179"CopyPNGFile "build/Debug-iphoneos/delicious memory.app/capture-button.png" "../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png"332239921#332239921#0(0"0(0#0#147"/Users/Phx/Delicious-Memory/delicious memory/../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png8656175808#593"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/Phx/Delicious-Memory/delicious memory/../../iPhone Sample Code/boctor-idev-recipes-40cd85d/RaisedCenterTabBar/Images/Path/capture-button.png" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/capture-button.png"0#
+
+CCpResource "build/Debug-iphoneos/delicious memory.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+s332148480.554615
+e332148480.563076
+r1
+xCpResource
+xbuild/Debug-iphoneos/delicious memory.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist332148480#332148480#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist8619135840#519"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"0#
+
+CCreateUniversalBinary "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory" normal "armv6 armv7"
+s332320987.695324
+e332320987.698569
+r1
+xCreateUniversalBinary
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory
+xnormal
+xarmv6 armv7
+lSLF07#2@103"CreateUniversalBinary "build/Debug-iphoneos/delicious memory.app/delicious memory" normal "armv6 armv7"332320987#332320987#0(0"0(0#0#56"/Users/Phx/Delicious-Memory/delicious memory/armv6 armv78618777760#622"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory" "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory" -output "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory"0#
+
+CGenerateDSYMFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app.dSYM" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory"
+s332320987.698666
+e332320987.734258
+r1
+xGenerateDSYMFile
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app.dSYM
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory
+lSLF07#2@126"GenerateDSYMFile "build/Debug-iphoneos/delicious memory.app.dSYM" "build/Debug-iphoneos/delicious memory.app/delicious memory"332320987#332320987#0(0"0(0#0#103"/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory8617969536#413"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/delicious memory" -o "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app.dSYM"0#
+
+CLd "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory" normal armv6
+s332320987.643187
+e332320987.695250
+r1
+xLd
+x/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory
+xnormal
+xarmv6
+lSLF07#2@154"Link /Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory332320987#332320987#0(0"0(0#0#0"8620547136#953"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk "-L/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" -filelist "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory.LinkFileList" -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv6/delicious memory"0#
+
+CLd "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory" normal armv7
+s332320987.641452
+e332320987.694443
+r1
+xLd
+x/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory
+xnormal
+xarmv7
+lSLF07#2@154"Link /Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory332320987#332320987#0(0"0(0#0#0"8621019360#953"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk "-L/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" -filelist "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory.LinkFileList" -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/Objects-normal/armv7/delicious memory"0#
+
+CProcessInfoPlistFile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/Info.plist" delicious_memory-Info.plist
+s332153999.438616
+e332153999.501989
+r1
+xProcessInfoPlistFile
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/Info.plist
+xdelicious_memory-Info.plist
+lSLF07#2@35"Process delicious_memory-Info.plist332153999#332153999#0(0"0(0#0#72"/Users/Phx/Delicious-Memory/delicious memory/delicious_memory-Info.plist8629911200#630"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility delicious_memory-Info.plist -genpkginfo "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/ResourceRules.plist" -o "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/Info.plist"0#
+
+CProcessPCH /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch.gch delicious_memory_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s332148481.631968
+e332148482.579628
+r1
+xProcessPCH
+x/var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch.gch
+xdelicious_memory_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@38"Precompile delicious_memory_Prefix.pch332148481#332148482#0(0"0(0#0#72"/Users/Phx/Delicious-Memory/delicious memory/delicious_memory_Prefix.pch8603829600#1873"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv6" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -c "/Users/Phx/Delicious-Memory/delicious memory/delicious_memory_Prefix.pch" -o /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-cvcbggycymyvxqgkdjuzshohqnts/delicious_memory_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch.gch delicious_memory_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s332148481.633627
+e332148482.476895
+r1
+xProcessPCH
+x/var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch.gch
+xdelicious_memory_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@38"Precompile delicious_memory_Prefix.pch332148481#332148482#0(0"0(0#0#72"/Users/Phx/Delicious-Memory/delicious memory/delicious_memory_Prefix.pch8620538336#1873"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-generated-files.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-own-target-headers.hmap" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-all-target-headers.hmap" -iquote "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory-project-headers.hmap" "-F/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos" "-I/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/include" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources/armv7" "-I/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/DerivedSources" -c "/Users/Phx/Delicious-Memory/delicious memory/delicious_memory_Prefix.pch" -o /var/folders/on/on7fkL9OFpiaBgnLBy2FsE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/delicious_memory_Prefix-fgzbellefvgialbwkjkeyxbbbxqe/delicious_memory_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision" "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision"
+s332148483.224158
+e332148483.230653
+r1
+xProcessProductPackaging
+x/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision
+lSLF07#2@201"ProcessProductPackaging "/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision" "build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision"332148483#332148483#0(0"0(0#0#111"/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision8605874784#446"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Phx/Library/MobileDevice/Provisioning Profiles/1A7E9F30-45AE-4415-BE25-125C3FD1113E.mobileprovision" -o "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app/embedded.mobileprovision"0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent"
+s332153999.506925
+e332153999.526691
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent
+lSLF07#2@204"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist "build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent"332153999#332153999#0(0"0(0#0#134"/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent8628827936#475"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o "/Users/Phx/Delicious-Memory/delicious memory/build/delicious memory.build/Debug-iphoneos/delicious memory.build/delicious memory.xcent"0#
+
+CTouch "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"
+s332320987.734444
+e332320987.737949
+r1
+xTouch
+x/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app
+lSLF07#2@92"Touch /Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app332320987#332320987#0(0"0(0#0#0"8612217408#289"    cd "/Users/Phx/Delicious-Memory/delicious memory"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/Phx/Delicious-Memory/delicious memory/build/Debug-iphoneos/delicious memory.app"0#
+
