@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MyMenuTableViewController;
 
-
-@interface FirstViewController : UIViewController <UINavigationBarDelegate, UITableViewDelegate,
-                                                   UITableViewDataSource, UIActionSheetDelegate>
+@interface FirstViewController : UIViewController <UINavigationBarDelegate, UIActionSheetDelegate>
 {
-	UITableView	*myTableView;
-	NSMutableArray *menuList;
-
+    MyMenuTableViewController *orderedMenu;
+    MyMenuTableViewController *unorderedMenu;
 }
-@property (nonatomic, retain) IBOutlet UITableView *myTableView;
-@property (nonatomic, retain) NSMutableArray *menuList;
+@property (nonatomic,retain) MyMenuTableViewController *orderedMenu;
+@property (nonatomic,retain) MyMenuTableViewController *unorderedMenu;
 
 @end

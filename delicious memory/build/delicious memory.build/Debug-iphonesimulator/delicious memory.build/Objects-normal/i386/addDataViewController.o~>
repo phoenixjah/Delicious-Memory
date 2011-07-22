@@ -1,13 +1,2 @@
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:13: error: no declaration of property 'overlayViewController' found in the interface
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController viewDidLoad]':
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:37: error: request for member 'overlayViewController' in something not a structure or union
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:38: error: request for member 'overlayViewController' in something not a structure or union
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController viewDidUnload]':
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:61: error: request for member 'overlayViewController' in something not a structure or union
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController dealloc]':
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:68: error: 'overlayViewController' undeclared (first use in this function)
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:68: error: (Each undeclared identifier is reported only once
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:68: error: for each function it appears in.)
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController showImagePicker:]':
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:78: error: request for member 'overlayViewController' in something not a structure or union
-/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:79: error: request for member 'overlayViewController' in something not a structure or union
+/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m: In function '-[addDataViewController imagePickerController:didFinishPickingMediaWithInfo:]':
+/Users/Phx/Delicious-Memory/delicious memory/Classes/addDataViewController.m:132: warning: unused variable 'image'

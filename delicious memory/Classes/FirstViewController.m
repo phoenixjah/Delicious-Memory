@@ -7,14 +7,10 @@
 //
 
 #import "FirstViewController.h"
-
+#import "MyMenuTableViewController.h"
 
 @implementation FirstViewController
-@synthesize menuList, myTableView ;
-
-static NSArray *pageNames = nil;
-
-
+@synthesize orderedMenu,unorderedMenu;
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
@@ -40,6 +36,10 @@ static NSArray *pageNames = nil;
     
 	self.navigationItem.titleView = segmentedControl;
 	[segmentedControl release];
+    
+    self.orderedMenu = [[MyMenuTableViewController alloc]initWithStyle:UITableViewStylePlain];
+    self.unorderedMenu =[[MyMenuTableViewController alloc]initWithStyle:UITableViewStylePlain];
+    [self.view addSubview:self.orderedMenu.view];
 
 }
 
@@ -48,7 +48,24 @@ static NSArray *pageNames = nil;
 {
 	// The segmented control was clicked, handle it here 
 	UISegmentedControl *segmentedControl = (UISegmentedControl *)sender;
-	NSLog(@"Segment clicked: %d", segmentedControl.selectedSegmentIndex);
+    
+    if (segmentedControl.selectedSegmentIndex == 0) {//ordered menu
+        
+        if ([self.unorderedMenu.view superview]) {
+    
+            [self.unorderedMenu.view removeFromSuperview];
+            [self.view addSubview:self.orderedMenu.view];
+        }
+        
+    } else {//unordered menu
+        
+        if([self.orderedMenu.view superview]){
+            
+            [self.orderedMenu.view removeFromSuperview];
+            [self.view addSubview:self.unorderedMenu.view];
+        }
+        
+    }
 }
 
 
@@ -69,21 +86,20 @@ static NSArray *pageNames = nil;
 
 - (void)viewDidUnload
 {
-	self.myTableView = nil;
-	self.menuList = nil;
+    self.orderedMenu = nil;
+    self.unorderedMenu = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	[self.myTableView deselectRowAtIndexPath:self.myTableView.indexPathForSelectedRow animated:NO];
 }
 
 
 - (void)dealloc {
-	[myTableView release];
-	[menuList release];
 
     [super dealloc];
+    [orderedMenu dealloc];
+    [unorderedMenu dealloc];
 }
 
 @end

@@ -7,12 +7,12 @@
 //
 
 #import "delicious_memoryAppDelegate.h"
-#import "MyTabBarController.h"
+#import "addDataViewController.h"
 
 @implementation delicious_memoryAppDelegate
 
 @synthesize window;
-@synthesize tabBarController;
+@synthesize tabBarController,addDataController;
 
 
 #pragma mark -
@@ -24,12 +24,39 @@
 
 	// Set the tab bar controller as the window's root view controller and display.
     self.window.rootViewController = self.tabBarController;
-	[self.tabBarController addCenterButtonWithImage:[UIImage imageNamed:@"capture-button.png"] highlightImage:nil];
-    [self.window makeKeyAndVisible];
+	
+	
+	//UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
+/*
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+	button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
+	button.frame = CGRectMake(130.0, 5.0, buttonImage.size.width, buttonImage.size.height);
+	[button setBackgroundImage:buttonImage forState:UIControlStateNormal];
+	
+	[button addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+    */
+	//[self.tabBarController.tabBar addSubview:button];
+	self.addDataController=[[addDataViewController alloc]init ];
+	
+	[self.tabBarController.tabBar addSubview:self.addDataController.cameraBtn];
+    self.tabBarController.delegate = self;
+	
+	/*
+	CGFloat heightDifference = buttonImage.size.height - self.tabBarController.tabBar.frame.size.height;
+	
+	if (heightDifference < 0){
+		button.center = self.tabBarController.tabBar.center;
+	}else{
+		CGPoint center = self.tabBarController.tabBar.center;
+		center.y = center.y - heightDifference/2.0;
+		button.center = center;
+	}
+	*/
+	    
+	[self.window makeKeyAndVisible];
 
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -72,6 +99,15 @@
 #pragma mark -
 #pragma mark UITabBarControllerDelegate methods
 
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+	
+	if([self.tabBarController.viewControllers indexOfObject:viewController]==1){
+		return NO;
+	}else{
+		return YES;
+	}
+}
+
 /*
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
@@ -97,6 +133,7 @@
 
 - (void)dealloc {
     [tabBarController release];
+	[addDataController release];
     [window release];
     [super dealloc];
 }

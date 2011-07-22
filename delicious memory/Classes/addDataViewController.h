@@ -7,18 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/UTCoreTypes.h>
 #import <AudioToolbox/AudioServices.h>
 
 
-@interface addDataViewController : UIViewController <UIImagePickerControllerDelegate,
+@interface addDataViewController : UIViewController <UIImagePickerControllerDelegate,UIActionSheetDelegate,
                                                      UINavigationControllerDelegate >
 {	
 	UIImagePickerController *imagePickerController;
-	//OverlayViewController *overlayViewController;//the camera custom overlay view
+	UIButton *cameraBtn;
+	
 }
 
-//@property (nonatomic,retain) OverlayViewController *overlayViewController;
 @property (nonatomic,retain) UIImagePickerController *imagePickerController;
--(IBAction)cameraAction:(id)sender;
+@property (nonatomic,retain) UIButton *cameraBtn;
 
+-(void)cameraAction;
+-(void)addAction:(id)sender;
 @end

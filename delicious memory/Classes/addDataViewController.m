@@ -7,12 +7,35 @@
 //
 
 #import "addDataViewController.h"
+#import "delicious_memoryAppDelegate.h"
 
 
 @implementation addDataViewController
-@synthesize imagePickerController;
-//@synthesize overlayViewController;
+@synthesize imagePickerController,cameraBtn;
+
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+- (id)init{
+	
+	[super init];
+	self.imagePickerController = [[[UIImagePickerController alloc] init] autorelease];
+	self.imagePickerController.delegate = self;
+    self.imagePickerController.allowsEditing = YES;
+    [self.imagePickerController setEditing:YES animated:YES];
+
+	
+	UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
+	
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+	button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
+	button.frame = CGRectMake(130.0, 5.0, buttonImage.size.width, buttonImage.size.height);
+	[button setBackgroundImage:buttonImage forState:UIControlStateNormal];
+	
+	[button addTarget:self action:@selector(addAction:) forControlEvents:UIControlEventTouchUpInside];
+	self.cameraBtn = button;
+	
+	[button release];
+	return self;
+}
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,16 +58,27 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	
-	self.imagePickerController = [[[UIImagePickerController alloc] init] autorelease];
-	self.imagePickerController.delegate = self;
+	[super viewDidLoad];
+	NSLog(@"in viewDidLoad");
+
+	/*
+	UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
+	
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+	button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
+	button.frame = CGRectMake(130.0, 5.0, buttonImage.size.width, buttonImage.size.height);
+	[button setBackgroundImage:buttonImage forState:UIControlStateNormal];
+	
+	[button addTarget:self action:@selector(cameraAction:) forControlEvents:UIControlEventTouchUpInside];
+	[self.tabBarController.tabBar addSubview:button];
+    */
 	/*
 	self.overlayViewController = [[[OverlayViewController alloc]initWithNibName:@"OverlayViewController" bundle:nil ] autorelease];
 	self.overlayViewController.delegate = self;
-	
-    //[super viewDidLoad];
-*/
-}
+	*/
+   
 
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -71,21 +105,51 @@
 
 - (void)dealloc {
 	[imagePickerController release];
+    [self.cameraBtn release];
     [super dealloc];
 }
 
 #pragma mark -
 #pragma mark TakePicture
 
-
--(IBAction)cameraAction:(id)sender{
+-(void)customizeCamera{
+    
+    //UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 400, 100, 100) ];
+    //btn.backgroundColor=[UIColor whiteColor];
+       //self.imagePickerController.showsCameraControls = NO;
+    UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
 	
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
+	button.frame = CGRectMake(0, 450, 100, 100);
+	[button addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+     [self.imagePickerController.view addSubview:button];
+
+    //NSArray *items = [NSArray arrayWithObjects: systemItem, nil];
+    //[self.imagePickerController.toolbar setItems:items];
+    
+}
+-(void)action:(id)sender{
+    NSLog(@"pressed");
+}
+-(void)cameraAction{
+    //[(delicious_memoryAppDelegate *)[[UIApplication sharedApplication] delegate] tabBarController].UIModalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
+    
 	if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
 		self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-		
-		[self presentModalViewController:self.imagePickerController animated:YES];
-	}
+        
+		//customize camera control
+        [self customizeCamera];
+
+        [[(delicious_memoryAppDelegate *)[[UIApplication sharedApplication] delegate] tabBarController] presentModalViewController:self.imagePickerController animated:YES];
+	}else{
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        
+        [[(delicious_memoryAppDelegate *)[[UIApplication sharedApplication] delegate] tabBarController] presentModalViewController:self.imagePickerController animated:YES];
+         }
 }
+
 
 
 #pragma mark -
@@ -97,10 +161,59 @@
 {
     UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
     
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), self);
+    
+    UIViewController *test = [[UIViewController alloc]init];
+   
+    picker.navigationBarHidden=NO;
+    [[UIApplication sharedApplication]setStatusBarHidden:NO];
+    [picker pushViewController:test animated:YES];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self dismissModalViewControllerAnimated:YES];    // tell our delegate we are finished with the picker
+	[picker dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)modalView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex)
+	{
+		case 0://add to ordered
+		{
+            NSLog(@"ordered");
+            [self cameraAction];
+            break;
+		}
+		case 1://add to unordered
+		{
+            NSLog(@"unordered");
+            [self cameraAction];
+            break;
+		}//index 2 is cancel button
+
+	}
+}
+#pragma mark -
+#pragma mark API
+
+- (void)addAction:(id)sender
+{
+	UIActionSheet *styleAlert = [[UIActionSheet alloc] initWithTitle:@"New Order"
+                                                            delegate:self cancelButtonTitle:@"Cancel"
+                                              destructiveButtonTitle:nil
+                                                   otherButtonTitles:	@"加到吃過的",
+                                                                        @"加到想去吃的",
+                                                                        nil,
+                                                                        nil];
+	
+	// use the same style as the nav bar
+	//styleAlert.actionSheetStyle = self.navigationController.navigationBar.barStyle;
+	
+	[styleAlert showInView:self.view];
+	[styleAlert release];
 }
 @end
