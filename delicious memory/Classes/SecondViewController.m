@@ -156,7 +156,7 @@
     
 	if (gestureRecognizer.state == UIGestureRecognizerStateEnded ){
 		NSLog(@"UIGestureRecognizerStateEnded");
-		[self.mapView removeAnnotations:mapView.annotations];
+		//[self.mapView removeAnnotations:mapView.annotations];
 		CGPoint touchPoint = [gestureRecognizer locationInView:self.mapView];   
 		CLLocationCoordinate2D touchMapCoordinate = 
 		[self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];

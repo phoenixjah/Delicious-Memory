@@ -19,9 +19,6 @@
 	[super init];
 	self.imagePickerController = [[[UIImagePickerController alloc] init] autorelease];
 	self.imagePickerController.delegate = self;
-    self.imagePickerController.allowsEditing = YES;
-    [self.imagePickerController setEditing:YES animated:YES];
-
 	
 	UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
 	
@@ -121,16 +118,20 @@
 	
 	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
-	button.frame = CGRectMake(0, 450, 100, 100);
-	[button addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+	button.frame = CGRectMake(280, 420, 50, 50);
+	[button addTarget:self action:@selector(pickFromAlbum:) forControlEvents:UIControlEventTouchUpInside];
      [self.imagePickerController.view addSubview:button];
 
     //NSArray *items = [NSArray arrayWithObjects: systemItem, nil];
     //[self.imagePickerController.toolbar setItems:items];
     
 }
--(void)action:(id)sender{
-    NSLog(@"pressed");
+-(void)pickFromAlbum:(id)sender{
+    UIImagePickerController *picker=[[UIImagePickerController alloc]init ];
+    picker.delegate=self;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [imagePickerController presentModalViewController:picker animated:YES];
+    [picker release];
 }
 -(void)cameraAction{
     //[(delicious_memoryAppDelegate *)[[UIApplication sharedApplication] delegate] tabBarController].UIModalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
