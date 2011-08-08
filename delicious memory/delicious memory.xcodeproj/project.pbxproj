@@ -25,6 +25,8 @@
 		B307C01213CC2F9F0024E684 /* addDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B307C01113CC2F9F0024E684 /* addDataViewController.m */; };
 		B3BBCB2D13D55D7E00A5D120 /* MyMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCB2C13D55D7E00A5D120 /* MyMenuTableViewController.m */; };
 		B3CCC9FB13D8205E0081BD95 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCC9FA13D8205E0081BD95 /* MobileCoreServices.framework */; };
+		B3D72CD313F01FB0001F98F1 /* inputNewInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D72CD113F01FB0001F98F1 /* inputNewInfoView.m */; };
+		B3D72CD413F01FB0001F98F1 /* inputNewInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D72CD213F01FB0001F98F1 /* inputNewInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,9 @@
 		B3BBCB2B13D55D7E00A5D120 /* MyMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenuTableViewController.h; sourceTree = "<group>"; };
 		B3BBCB2C13D55D7E00A5D120 /* MyMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenuTableViewController.m; sourceTree = "<group>"; };
 		B3CCC9FA13D8205E0081BD95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B3D72CD013F01FB0001F98F1 /* inputNewInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputNewInfoView.h; sourceTree = "<group>"; };
+		B3D72CD113F01FB0001F98F1 /* inputNewInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inputNewInfoView.m; sourceTree = "<group>"; };
+		B3D72CD213F01FB0001F98F1 /* inputNewInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = inputNewInfoView.xib; path = Classes/inputNewInfoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,8 @@
 				B307C01113CC2F9F0024E684 /* addDataViewController.m */,
 				B3BBCB2B13D55D7E00A5D120 /* MyMenuTableViewController.h */,
 				B3BBCB2C13D55D7E00A5D120 /* MyMenuTableViewController.m */,
+				B3D72CD013F01FB0001F98F1 /* inputNewInfoView.h */,
+				B3D72CD113F01FB0001F98F1 /* inputNewInfoView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 				B3CF9F5213CD7ED200DA8B62 /* images */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				6005B54E13D9737500324D9B /* SecondView.xib */,
+				B3D72CD213F01FB0001F98F1 /* inputNewInfoView.xib */,
 				8D1107310486CEB800E47090 /* delicious_memory-Info.plist */,
 			);
 			name = Resources;
@@ -211,6 +219,7 @@
 				6005B53E13D9727F00324D9B /* capture-button.png in Resources */,
 				6005B54913D9730E00324D9B /* addNewPlaceFromMap.xib in Resources */,
 				6005B54F13D9737500324D9B /* SecondView.xib in Resources */,
+				B3D72CD413F01FB0001F98F1 /* inputNewInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,7 @@
 				6005B54813D9730E00324D9B /* addNewPlaceFromMap.m in Sources */,
 				6005B54A13D9730E00324D9B /* AppAnnotation.m in Sources */,
 				6005B54B13D9730E00324D9B /* SecondViewController.m in Sources */,
+				B3D72CD313F01FB0001F98F1 /* inputNewInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
