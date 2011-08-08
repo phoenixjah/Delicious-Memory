@@ -112,6 +112,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 	CLLocationCoordinate2D coord = newLocation.coordinate;
 	NSLog(@"self in locationManager delegate = %@", self);
+	NSLog(@"Show locationManager.");
 	
 	
 	/*
@@ -156,7 +157,12 @@
     
 	if (gestureRecognizer.state == UIGestureRecognizerStateEnded ){
 		NSLog(@"UIGestureRecognizerStateEnded");
-		[self.mapView removeAnnotations:mapView.annotations];
+		NSLog(@"annotations = %@", mapView.annotations);
+		id annotation = [mapView.annotations objectAtIndex:0];
+		
+		if ([annotation isKindOfClass:[AppAnnotation class]] == YES) {
+			[self.mapView removeAnnotation:annotation];
+		}
 		CGPoint touchPoint = [gestureRecognizer locationInView:self.mapView];   
 		CLLocationCoordinate2D touchMapCoordinate = 
 		[self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
