@@ -161,6 +161,7 @@
 		if ([annotation isKindOfClass:[AppAnnotation class]] == YES) {
 			[self.mapView removeAnnotation:annotation];
 		}
+
 		CGPoint touchPoint = [gestureRecognizer locationInView:self.mapView];   
 		CLLocationCoordinate2D touchMapCoordinate = 
 		[self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
