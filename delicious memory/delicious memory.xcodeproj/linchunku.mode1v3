@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppAnnotation.h</string>
+								<string>SecondViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppAnnotation.h</string>
+										<string>SecondViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>60AF35BE13F3F98200633670</string>
+										<string>60AF35F613F402E900633670</string>
 										<key>history</key>
 										<array>
 											<string>60270E9513F009F100C6B639</string>
@@ -341,14 +341,14 @@
 											<string>60270EA213F009F100C6B639</string>
 											<string>60270EA313F009F100C6B639</string>
 											<string>60961C8E13F00E34001C4F5F</string>
-											<string>60AF359F13F3F7EE00633670</string>
-											<string>60AF35A013F3F7EE00633670</string>
 											<string>60AF35A113F3F7EE00633670</string>
 											<string>60AF35A213F3F7EE00633670</string>
-											<string>60AF35B313F3F96700633670</string>
-											<string>60AF35B413F3F96700633670</string>
-											<string>60AF35B513F3F96700633670</string>
-											<string>60AF35B613F3F96700633670</string>
+											<string>60AF35C713F3FC0500633670</string>
+											<string>60AF35C913F3FC0500633670</string>
+											<string>60AF35E413F3FE6D00633670</string>
+											<string>60AF35EF13F401A800633670</string>
+											<string>60AF35F013F401A800633670</string>
+											<string>60AF35F113F401A800633670</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,8 +549,8 @@
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6005B55413D9737D00324D9B</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/linchunku/test/delicious memory/delicious memory.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 118 1280 660 0 0 1280 778 </string>
@@ -569,12 +569,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppAnnotation.m</string>
+								<string>SecondViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -591,8 +593,6 @@
 							<string>378pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

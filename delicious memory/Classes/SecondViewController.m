@@ -78,7 +78,7 @@
 	addNewPlaceFromMap *newViewController = [[addNewPlaceFromMap alloc] init];
 
 	//add new record in this  暫時放在這吧
-	[self addNewDataInDB:@"HELLO"];
+	[self addNewDataInDB:@"HELLO WORLD"];
 	//
 	UIBarButtonItem *backBar = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
 	self.navigationItem.backBarButtonItem = backBar;
@@ -103,8 +103,8 @@
             if( sqlite3_exec( db , "CREATE TABLE IF NOT EXISTS list_table( filed1 char(20));" , NULL , NULL , &err_report ) != SQLITE_OK )
                 NSLog( @"%s" , err_report );
 		}
-		
-		if( sqlite3_exec( db , "INSERT INTO list_table VALUES('HELLO');" , NULL , NULL , &err_report ) != SQLITE_OK )
+		NSString *command = [NSString stringWithFormat:@"INSERT INTO list_table VALUES('%@');",test_text];
+				if( sqlite3_exec( db , [command cStringUsingEncoding:NSUTF8StringEncoding], NULL , NULL , &err_report ) != SQLITE_OK )
                 NSLog( @"%s" , err_report );
         
     } else {
@@ -121,7 +121,7 @@
 	NSLog(@"ViewForAnnotation!!!!!!!");
 	//方法一：using default pin as a PlaceMarker to display on map
 	if ([annotation isKindOfClass:[AppAnnotation class]] == YES) {
-		if ([[annotation getRStatus] isEqualToString:@"NEW"] ==YES) {
+		if ([[annotation getRStatus] isEqualToString:@"NEW"] == YES) {
 			MKPinAnnotationView *newAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"newAnnotation"];
 			newAnnotation.pinColor = MKPinAnnotationColorGreen;
 			newAnnotation.animatesDrop = YES; 
@@ -133,6 +133,18 @@
 			return newAnnotation;
 			
 		}
+	}
+	else if ([annotation isKindOfClass:[MKUserLocation class]] == YES){
+		annotation.title = @"新增餐廳";
+		MKPinAnnotationView *newAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"newAnnotation"];
+		//newAnnotation.pinColor = MKPinAnnotationColorGreen;
+		//newAnnotation.animatesDrop = YES; 
+		newAnnotation.canShowCallout = YES;
+		UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+		[detailButton addTarget:self action:@selector(addNewPlace) forControlEvents:UIControlEventTouchUpInside];
+		
+		newAnnotation.rightCalloutAccessoryView = detailButton;
+		return newAnnotation;
 	}
 	return nil;
 		
