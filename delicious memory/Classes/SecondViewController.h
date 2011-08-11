@@ -11,12 +11,14 @@
 #import <MapKit/MapKit.h>
 
 
-@interface SecondViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate>{
+@interface SecondViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate>{
 	CLLocationManager* locationManager;
-	IBOutlet MKMapView *mapView;
+	MKMapView *mapView;
+	UISearchBar *searchBar;
 }
 
-@property (retain, nonatomic) IBOutlet MKMapView *mapView;
+@property (retain, nonatomic) MKMapView *mapView;
+@property (retain, nonatomic) UISearchBar *searchBar;
 
 -(void)initialMapView:(CLLocationCoordinate2D)coord;
 -(void)addNewPlace;

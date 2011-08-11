@@ -10,10 +10,12 @@
 #import "addNewPlaceFromMap.h"
 #import "AppAnnotation.h"
 #import <sqlite3.h>
+#import "CJSONDeserializer.h"
+
 
 @implementation SecondViewController
 
-@synthesize mapView;
+@synthesize mapView, searchBar;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -174,7 +176,8 @@
 -(void)initialMapView:(CLLocationCoordinate2D)coord{
 	NSLog(@"This is Second View Controller, latitude = %f, logitude = %f", coord.latitude, coord.longitude);
 	//mapView.delegate = self;
-	
+	searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+	searchBar.delegate = self;
 	mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 411)];
 	mapView.showsUserLocation = YES;
 	MKCoordinateRegion region;
@@ -187,6 +190,7 @@
 	mapView.delegate = self;
 	mapView.userInteractionEnabled = YES;
 	 [self.view addSubview:mapView];
+	[self.view addSubview:searchBar];
 	UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] 
 										  initWithTarget:self action:@selector(handleLongPress:)];
 	//lpgr.minimumPressDuration = 2.0; //user needs to press for 2 seconds; default is 0.4 seconds
@@ -219,5 +223,30 @@
 	}
 	
 }
+
+#pragma mark -
+#pragma mark UISearchBar Delegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+	NSLog(@"YEAH!");
+	NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?address=花蓮市國興三街六十三號&sensor=true&language=zh-TW"]];
+	NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+	NSDictionary *dict = [[CJSONDeserializer deserializer] deserialize:data error:nil];
+	[url release];
+	[data release];
+	/*
+	if ([[dict objectForKey:@"status"] isEqual:@"OK"]){ 
+		NSLog(@"I'm OK!");
+		NSLog("Search!!!!: %@",[[[dict objectForKey:@"results"] objectAtIndex:0] objectForKey:@"formatted_address"]);
+		MKCoordinateRegion region;
+		region.center = coord;
+		span.latitudeDelta = 0.004;
+		span.longitudeDelta = 0.004;
+		region.span =span;
+		[mapView setRegion:region];
+	}
+	 */
+}
+
 
 @end
