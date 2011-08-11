@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "addNewPlaceFromMap.h"
 #import "AppAnnotation.h"
+#import <sqlite3.h>
 
 @implementation SecondViewController
 
@@ -75,10 +76,42 @@
 -(void)addNewPlace{
 	NSLog(@"addNewPlace");
 	addNewPlaceFromMap *newViewController = [[addNewPlaceFromMap alloc] init];
+
+	//add new record in this  暫時放在這吧
+	[self addNewDataInDB:@"HELLO"];
+	//
 	UIBarButtonItem *backBar = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
 	self.navigationItem.backBarButtonItem = backBar;
 	[self.navigationController pushViewController:newViewController animated:YES];
 	[newViewController release];
+}
+
+-(void)addNewDataInDB:(NSString*)test_text{
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    NSString *dbPath = [documentsPath stringByAppendingPathComponent:@"place_list.db"];
+	// check db exists
+    BOOL firstUse = ![[NSFileManager defaultManager] fileExistsAtPath:dbPath];
+	
+	sqlite3 *db;
+    char *err_report;
+	//char *textInDB = [[NSString stringWithFormat:@"INSERT INTO list_table VALUES('%@');",test_text] UTF8String];
+    
+    if ( sqlite3_open( [dbPath UTF8String] , &db ) == SQLITE_OK ) {
+        //NSLog( @"%s" , dbPath );
+        if ( firstUse ) {
+            if( sqlite3_exec( db , "CREATE TABLE IF NOT EXISTS list_table( filed1 char(20));" , NULL , NULL , &err_report ) != SQLITE_OK )
+                NSLog( @"%s" , err_report );
+		}
+		
+		if( sqlite3_exec( db , "INSERT INTO list_table VALUES('HELLO');" , NULL , NULL , &err_report ) != SQLITE_OK )
+                NSLog( @"%s" , err_report );
+        
+    } else {
+        NSLog( @"Cannot open databases: %s" , dbPath);
+    }
+    sqlite3_close( db );
+	
 }
 
 #pragma mark -
