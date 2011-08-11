@@ -29,8 +29,13 @@
 	return title;
 }
 
+- (NSString *)getRStatus{
+	return self.RStatus;
+}
+/*
 - (NSString *)RStatus{
 	return RStatus;
 }
-
+*/
+ 
 @end

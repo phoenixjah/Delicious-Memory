@@ -121,7 +121,7 @@
 	NSLog(@"ViewForAnnotation!!!!!!!");
 	//方法一：using default pin as a PlaceMarker to display on map
 	if ([annotation isKindOfClass:[AppAnnotation class]] == YES) {
-		if ([[annotation RStatus] isEqualToString:@"NEW"]==YES) {
+		if ([[annotation getRStatus] isEqualToString:@"NEW"] ==YES) {
 			MKPinAnnotationView *newAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"newAnnotation"];
 			newAnnotation.pinColor = MKPinAnnotationColorGreen;
 			newAnnotation.animatesDrop = YES; 
