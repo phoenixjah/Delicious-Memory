@@ -227,25 +227,30 @@
 #pragma mark -
 #pragma mark UISearchBar Delegate
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+- (void)searchBarSearchButtonClicked:(UISearchBar *)mySearchBar{
 	NSLog(@"YEAH!");
-	NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?address=花蓮市國興三街六十三號&sensor=true&language=zh-TW"]];
+	NSURL *url = [[NSURL alloc] initWithString:[[NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=台北市大安區羅斯福路四段一號&sensor=true&language=zh-TW"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	NSLog(@"url = %@", url);
 	NSData *data = [[NSData alloc] initWithContentsOfURL:url];
 	NSDictionary *dict = [[CJSONDeserializer deserializer] deserialize:data error:nil];
-	[url release];
-	[data release];
-	/*
+	
+	NSLog(@"data = %@", data);
+	NSLog(@"dic = %@", dict);
+	
 	if ([[dict objectForKey:@"status"] isEqual:@"OK"]){ 
-		NSLog(@"I'm OK!");
-		NSLog("Search!!!!: %@",[[[dict objectForKey:@"results"] objectAtIndex:0] objectForKey:@"formatted_address"]);
+		
+		CLLocationCoordinate2D coord;
+		coord.latitude = [[[[[[dict objectForKey:@"results"] objectAtIndex:0] objectForKey:@"geometry"] objectForKey:@"location"] objectForKey:@"lat"] floatValue ];
+		coord.longitude = [[[[[[dict objectForKey:@"results"] objectAtIndex:0] objectForKey:@"geometry"] objectForKey:@"location"] objectForKey:@"lng"] floatValue ];
+		MKCoordinateSpan span;
 		MKCoordinateRegion region;
 		region.center = coord;
 		span.latitudeDelta = 0.004;
 		span.longitudeDelta = 0.004;
 		region.span =span;
 		[mapView setRegion:region];
+		[mySearchBar resignFirstResponder];
 	}
-	 */
 }
 
 

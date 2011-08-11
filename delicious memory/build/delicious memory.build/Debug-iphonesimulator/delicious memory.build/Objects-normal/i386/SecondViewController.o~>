@@ -1,4 +1,0 @@
-/Users/linchunku/test/delicious memory/Classes/SecondViewController.m: In function '-[SecondViewController mapView:viewForAnnotation:]':
-/Users/linchunku/test/delicious memory/Classes/SecondViewController.m:126: warning: '-getRStatus' not found in protocol(s)
-/Users/linchunku/test/delicious memory/Classes/SecondViewController.m: In function '-[SecondViewController searchBarSearchButtonClicked:]':
-/Users/linchunku/test/delicious memory/Classes/SecondViewController.m:234: warning: unused variable 'dict'
