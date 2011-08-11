@@ -10,7 +10,10 @@
 
 
 @interface addNewPlaceFromMap : UIViewController {
-
+	IBOutlet UILabel *text;
+	NSMutableArray *dataSource;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *text;
 
 @end

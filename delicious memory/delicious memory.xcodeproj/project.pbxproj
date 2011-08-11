@@ -22,6 +22,7 @@
 		6005B54F13D9737500324D9B /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6005B54E13D9737500324D9B /* SecondView.xib */; };
 		6005B57213D9752200324D9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6005B57113D9752200324D9B /* CoreLocation.framework */; };
 		6005B57613D9752D00324D9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6005B57513D9752D00324D9B /* MapKit.framework */; };
+		60961CBE13F014F5001C4F5F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60961CBD13F014F5001C4F5F /* libsqlite3.dylib */; };
 		B307C01213CC2F9F0024E684 /* addDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B307C01113CC2F9F0024E684 /* addDataViewController.m */; };
 		B3BBCB2D13D55D7E00A5D120 /* MyMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCB2C13D55D7E00A5D120 /* MyMenuTableViewController.m */; };
 		B3CCC9FB13D8205E0081BD95 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CCC9FA13D8205E0081BD95 /* MobileCoreServices.framework */; };
@@ -52,6 +53,7 @@
 		6005B54E13D9737500324D9B /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		6005B57113D9752200324D9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6005B57513D9752D00324D9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		60961CBD13F014F5001C4F5F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* delicious_memory-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "delicious_memory-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B307C01013CC2F9F0024E684 /* addDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addDataViewController.h; sourceTree = "<group>"; };
 		B307C01113CC2F9F0024E684 /* addDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addDataViewController.m; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				6005B57213D9752200324D9B /* CoreLocation.framework in Frameworks */,
 				6005B57613D9752D00324D9B /* MapKit.framework in Frameworks */,
+				60961CBE13F014F5001C4F5F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +157,7 @@
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
 				6005B57113D9752200324D9B /* CoreLocation.framework */,
 				6005B57513D9752D00324D9B /* MapKit.framework */,
+				60961CBD13F014F5001C4F5F /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -20,5 +20,6 @@
 
 -(void)initialMapView:(CLLocationCoordinate2D)coord;
 -(void)addNewPlace;
+-(void)addNewDataInDB:(NSString*)test_text;
 
 @end
