@@ -127,28 +127,30 @@
 			newAnnotation.animatesDrop = YES; 
 			newAnnotation.canShowCallout = YES;
 			UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-			[detailButton addTarget:self action:@selector(addNewPlace) forControlEvents:UIControlEventTouchUpInside];
+			//[detailButton addTarget:self action:@selector(addNewPlace) forControlEvents:UIControlEventTouchUpInside];
 			
 			newAnnotation.rightCalloutAccessoryView = detailButton;
 			return newAnnotation;
 			
 		}
 	}
-	else if ([annotation isKindOfClass:[MKUserLocation class]] == YES){
-		annotation.title = @"新增餐廳";
-		MKPinAnnotationView *newAnnotation = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"newAnnotation"];
-		//newAnnotation.pinColor = MKPinAnnotationColorGreen;
-		//newAnnotation.animatesDrop = YES; 
-		newAnnotation.canShowCallout = YES;
-		UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-		[detailButton addTarget:self action:@selector(addNewPlace) forControlEvents:UIControlEventTouchUpInside];
-		
-		newAnnotation.rightCalloutAccessoryView = detailButton;
-		return newAnnotation;
-	}
 	return nil;
 		
 }
+
+- (void)mapView:(MKMapView *)theMapView didSelectAnnotationView:(MKAnnotationView *)view{
+    if(view.annotation == theMapView.userLocation){
+		
+        theMapView.userLocation.title = @"新增餐廳";
+        view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];       
+    }
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+	[self addNewPlace];
+}
+
+
 #pragma mark -
 #pragma mark CLLocationManagerDelegate
 
