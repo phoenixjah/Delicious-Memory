@@ -24,5 +24,6 @@
 @property int number;
 
 - (id)initAnnotation:(int)rid andName:(NSString*)name andStatus:(NSString*)status andLocation:(CLLocationCoordinate2D)coord;
+- (NSString *)getRStatus;
 
 @end
