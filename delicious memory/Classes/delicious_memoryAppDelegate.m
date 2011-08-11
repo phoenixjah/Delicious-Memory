@@ -25,17 +25,6 @@
 	// Set the tab bar controller as the window's root view controller and display.
     self.window.rootViewController = self.tabBarController;
 	
-	
-	//UIImage *buttonImage = [UIImage imageNamed:@"capture-button.png"];
-/*
-	UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-	button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
-	button.frame = CGRectMake(130.0, 5.0, buttonImage.size.width, buttonImage.size.height);
-	[button setBackgroundImage:buttonImage forState:UIControlStateNormal];
-	
-	[button addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
-    */
-	//[self.tabBarController.tabBar addSubview:button];
 	self.addDataController=[[addDataViewController alloc]init ];
 	
 	[self.tabBarController.tabBar addSubview:self.addDataController.cameraBtn];
